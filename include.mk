@@ -2,8 +2,7 @@ NAME := lua
 VERSION := v1
 
 # Container target
-IMAGE_REGISTRY := ghcr.io/carlsmedstad
-IMAGE_LUA := $(IMAGE_REGISTRY)/mkincl-$(NAME):$(VERSION)
+IMAGE_LUA := ghcr.io/mkincl/$(NAME)-provider:$(VERSION)
 
 .PHONY: enter-container-$(NAME)
 enter-container-$(NAME):
