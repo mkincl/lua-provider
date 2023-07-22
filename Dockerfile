@@ -1,10 +1,8 @@
-FROM alpine:3.17
+FROM alpine:3.18
 
 RUN apk add --no-cache \
-    git=2.38.4-r1 \
-    make=4.3-r1
-
-RUN echo https://dl-cdn.alpinelinux.org/alpine/edge/testing/ >> /etc/apk/repositories
+    git=2.40.1-r0 \
+    make=4.4.1-r1
 
 RUN apk add --no-cache \
-    stylua=0.15.3-r0
+    stylua=0.17.1-r0
