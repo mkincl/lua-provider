@@ -1,8 +1,8 @@
-FROM alpine:3.18
+FROM alpine:3.23
 
 RUN apk add --no-cache \
-    git=2.40.1-r0 \
-    make=4.4.1-r1
+    git=2.52.0-r0 \
+    make=4.4.1-r3
 
 RUN apk add --no-cache \
-    stylua=0.17.1-r0
+    stylua=2.3.1-r0
